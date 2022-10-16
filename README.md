@@ -1,27 +1,33 @@
 # APAI-LAB01: PULP Virtual Platform Setup and C programming
+
+
+### **How the lab session works**:
+- Every student must setup their own simulation environment on his/her laptop (next slides)
+- We will go through some code examples to learn in practice some basic concepts discussed during the theoretical classes. Plus lab assignment(s) to try on your own
+
+Requirements
+- C programming (this is NOT a C programming course!)
+- Familiarity with UNIX/Linux (Ubuntu) environment
+
+### Device 
 The target device for the lab sessions is the multi-core [PULP](https://github.com/pulp-platform/pulp) platform. 
 The PULP Virtual Platform simulator GVSOC, which is included within the [PULP SDK](https://github.com/pulp-platform/pulp-sdk), will be used during the class. 
-To install the GVSOC Simulator and setup your environment, you can follow one of the two options described below. 
+To install the GVSOC Simulator and setup your environment, you can follow one of the options described below. 
 
-# Setup
+# 1. Setup
+pre-requisites to be installed before the lab session
+
 ## GVSOC Simulator Install Guide
 
 ### *Option 1 (RECOMMENDED)*: Download the PULP Virtual Machine
-The Virtual Machine including a pre-installed PULP SDK and Virtual Platform simulator can be found here [Link](https://github.com/pulp-platform/pulp-sdk) (5GB).
-The machine can be used in VirtualBox, VMware (instructions below) or other hosts (not tested - you are on your own...).
+The Virtual Machine includes a pre-installed PULP SDK and Virtual Platform simulator.
 
+The machine can be used in VirtualBox, VMware (instructions below) or other hosts (not tested - you are on your own...).
 
 **FIRST OF ALL:** Download **pulp_box_2021_dory.ova** from this OneDrive [link](https://liveunibo-my.sharepoint.com/:u:/g/personal/alessio_burrello_unibo_it/EYDij6QsMKFBp7pOJx5eQAwBG2FHH59c9fs9a4eorDd9ew?e=f8bJ0O) (8.1 GB)
     * The link works with *unibo* accounts. 
-    
-If you want to use VirtualBox:
-1. Install and open [**VirtualBox**](https://www.virtualbox.org/)
-2. Go to **File > Import Appliance...**
-3. Select pulp_box_2021_dory.ova as the Appliance to import
-4. If needed, change the destination folder, then click on Import
-5. In the main VirtualBox window, click on the new virtual machine, then on Start
 
-If you want to use VMware Workstation Player 16:
+**If you want to use VMware Workstation Player 16**:
 1. Install and open [**VMware Workstation Player 16**](https://www.vmware.com/it/products/workstation-player/workstation-player-evaluation.html). Notice that "Player" is the free version of WMware, while "Pro" must be paid.
 2. Go to Player> File > open ...
 3. Select pulp_box_2021_dory.ova as the Appliance to import
@@ -29,6 +35,15 @@ If you want to use VMware Workstation Player 16:
 5. If WMware gets you a warning, force the import of the VM image provided
 6. In the main WMware window, click on the new virtual machine, then on "Play virtual machine"
 
+
+**Alternatively, If you want to use VirtualBox**:
+1. Install and open [**VirtualBox**](https://www.virtualbox.org/)
+2. Go to File > Import Appliance...
+3. Select pulp_box_2021_dory.ova as the Appliance to import
+4. If needed, change the destination folder, then click on Import
+5. In the main VirtualBox window, click on the new virtual machine, then on Start
+
+**VM info:**
 The username in the virtual machine is _pulp-user_, while the password is _pulp_. Check the README file on the Desktop.
 To make the SDK and GVSOC available in a newly opened shell, use the following command:
 ~~~~~shell
@@ -81,7 +96,7 @@ A new shell will open inside the container, in the `/home/pulp/workspace` folder
 docker-compose down
 ~~~~~
 
-## Test your GVSOC Installation
+# 2. Test your GVSOC Installation
 After completing the GVSOC setup, you can download some example code in your preferred working directory and run the _Helloworld_ on the PULP platform.
 ~~~~~shell
 cd <your_work_directory>
@@ -91,7 +106,7 @@ make clean all run
 ~~~~~
 If you see an *Hello* from PULP, your setup is fine! ;)
 
-## Additional Information
+# 3. Additional Information
 ### Source the PULP SDK every time you open a new shell
 To run example code on the PULP Virtual Plaform, you must export the RISC-V Compiler path and source the platorm configurafion file every time a shell is opened.
 
@@ -99,7 +114,7 @@ If you are using the PULP Virtual Machine, we prepared a bash script that does t
 ~~~~~shell
 source /pulp/sourceme.sh
 ~~~~~
-
+### if you are not using the VM we provided:
 If you installed the VM on your own, you will not find the sourceme.sh file. You must run the following commands manually each time you open a new shell: 
 
 ~~~~~shell
