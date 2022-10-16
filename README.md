@@ -132,6 +132,8 @@ source configs/pulp-open.sh
 
 You can consider to prepare a bash script (equivalent to the sourceme.sh) that you will use to automatically run these commands.
 
+# 4. Read about Linux basics
+[UNIX_Linux,C_basics_GIT.pdf](https://github.com/EEESlab/APAI22-LAB-VM-Setup/blob/main/UNIX_Linux%2CC_basics_GIT.pdf)
 
 
 
