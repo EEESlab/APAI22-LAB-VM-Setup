@@ -98,9 +98,17 @@ docker-compose down
 
 # 2. Test your GVSOC Installation
 After completing the GVSOC setup, you can download some example code in your preferred working directory and run the _Helloworld_ on the PULP platform.
+
+1. Download this repo in your home
 ~~~~~shell
 cd <your_work_directory>
-cd APAI22-LAB02-PULP-Simple-Convolution/
+git clone https://github.com/EEESlab/APAI22-LAB-VM-Setup
+~~~~~
+
+2. test environment
+~~~~~shell
+cd <your_work_directory>
+cd APAI22-LAB-VM-Setup/
 source /pulp/sourceme.sh
 make clean all run
 ~~~~~
