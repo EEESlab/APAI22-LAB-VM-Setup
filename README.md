@@ -1,4 +1,4 @@
-# APAI-LAB01: PULP Virtual Platform Setup and C programming
+# APAI-LAB: PULP Virtual Platform Setup and C programming
 
 
 ### **How the lab session works**:
