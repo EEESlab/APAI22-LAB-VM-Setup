@@ -141,5 +141,14 @@ You may need to change screen resolution size and keyboard language
 - Use `xrandr` to adjust the screen resolution: [link](https://www.linuxfordevices.com/tutorials/linux/change-screen-resolution)
 - You may need to change language of the keyboard: [link](https://support.hp.com/ee-en/document/c04948046)
 
+# Troubleshooting
 
+#### 1. Error: `Illegal instruction (core dumped)`
+Try building again the `pulp-sdk`
+```
+cd /pulp-pulp-sdk
+rm -rf build/
+rm -rf install
+make build
+```
 
