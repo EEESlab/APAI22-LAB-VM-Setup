@@ -136,4 +136,10 @@ You can consider to prepare a bash script (equivalent to the sourceme.sh) that y
 [UNIX_Linux,C_basics_GIT.pdf](https://github.com/EEESlab/APAI22-LAB-VM-Setup/blob/main/UNIX_Linux%2CC_basics_GIT.pdf)
 
 
+# Help
+You may need to change screen resolution size and keyboard language
+- Use `xrandr` to adjust the screen resolution: [link](https://www.linuxfordevices.com/tutorials/linux/change-screen-resolution)
+- You may need to change language of the keyboard: [link](https://support.hp.com/ee-en/document/c04948046)
+
+
 
