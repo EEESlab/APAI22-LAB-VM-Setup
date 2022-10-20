@@ -149,6 +149,7 @@ Try building again the `pulp-sdk`
 cd /pulp-pulp-sdk
 rm -rf build/
 rm -rf install
+source /pulp/sourceme.sh
 make build
 ```
 
